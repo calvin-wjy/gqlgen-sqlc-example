@@ -2,20 +2,7 @@
 
 package gqlgen
 
-type AgentInput struct {
-	Name  string `json:"name"`
-	Email string `json:"email"`
-}
-
-type AuthorInput struct {
-	Name    string  `json:"name"`
-	Website *string `json:"website"`
-	AgentID int64   `json:"agent_id"`
-}
-
-type BookInput struct {
-	Title       string  `json:"title"`
-	Description string  `json:"description"`
-	Cover       string  `json:"cover"`
-	AuthorIDs   []int64 `json:"authorIDs"`
+type StudentInput struct {
+	Name string `json:"name"`
+	Nim  string `json:"nim"`
 }
